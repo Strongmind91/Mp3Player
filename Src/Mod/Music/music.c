@@ -201,7 +201,7 @@ void display_lyric(char * name_of_file){
 	unsigned short usBytesRead = 0;
 	char str[2], time_detect[9], var[20], strDisplay[5][20];
 	int mm,ss,micro_ss,flag_song_title,i,k,j,time_pointer,flag_time_detect;
-	
+// error with char * without malloc()	
 	str[1] = '\0';
 	mm = ss = micro_ss = flag_song_title = i = k = j = time_pointer = flag_time_detect = 0;
 	sprintf(var, name_of_file);
